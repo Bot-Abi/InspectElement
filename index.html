@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMFlawyers.com-Client management website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="img/images.png"></a>
+            <div class="name"><p>CMFlawyers.com</p></div>
+            <div class="nav-links" id="navLinks">
+               <i class="fa fa-times" onclick="hideMenu()"></i>
+               <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="company.html">COMPANY</a></li>
+                <li><a href="partners.html">PARTNERS</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+               </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" ></i>
+        </nav>
+  
+    <div class="text-box">
+        <h1>Client Management</h1>
+        <p>We know how hard it is to manage so many clients altogether by yourself, so here we are with our creative minds to help you.<br> We are just like your personal assistants. Feel free to use our website as you wish! </p>
+        <a href="contact.html" class="hero-btn">Visit us to know more! </a>
+    </div>
+
+    </section>
+
+    <section class="menu">
+        <h1>Menu</h1>
+        <p>Please choose one</p>
+
+        <div class="row">
+                <div class="meetings">
+                <a href="meeting.html" style="text-decoration:none;">
+                <h3>CALENDAR</h3>
+                <p>Check the dates and arrange your schedule accordingly!</p>
+                </a>
+            </div>
+            <div class="meetings">
+                <a href="meeting1.html" style="text-decoration:none;">
+                <h3>CLIENTS</h3>
+                <p>Check clients to be attended to ...according to your schedule.</p>
+                </a>
+            </div>
+            <div class="meetings">
+            <a href="meeting2.html" style="text-decoration:none;">
+                <h3>MEETINGS</h3>
+                <p>Check meetings with partners!</p>
+            </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="campus">
+        <h1>Our Global Clients</h1>
+        <p>Working with international clients is more common than ever. And while it may seem glamorous, it pays to understand the pros and cons.</p>
+
+        <div class="row">
+            <div class="campus-col">
+                <img src="img/japan trial.jpg" style=" margin:1px 1px 1px 1px">
+                <div class="layer">
+                    <h3>JAPAN</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="img/australia trial.1jpg.jpg" style=" margin:1px 1px 1px 1px">
+                <div class="layer">
+                    <h3>AUSTRALIA</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="img/LA1.jpg" style=" margin:1px 1px 1px 1px">
+                <div class="layer">
+                    <h3>LOS ANGELES</h3>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section class="testimonials">
+        <h1>What other Clients Say</h1>
+        <p>"Don’t try to tell the customer what he wants. If you want to be smart, be smart in the shower. Then get out, go to work and serve the customer!" - Gene Buckley - Anna Segova</p>
+        <div class="row">
+            <div class="testimonial-col">
+                <img src="img/Sasha.jpg">
+                <div>
+                    <p>It was really great.Made my work a lot easier. It was always a struggle to manage my clients. But now with this website, I am able to manage my schedule really well.Thank you!
+                    </p>
+                    <h3>Sasha</h3>
+                </div>
+            </div>
+
+            <div class="testimonial-col">
+                <img src="img/christine.jpg">
+                <div>
+                    <p>Honestly speaking, using this website has made my life so much easier. Earlier I used to miss meetings...my time management was really bad. But this app really did it for me. It gave me reminders and helped me manage everything so well.
+                    </p>
+                    <h3>Christine</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h1>Feel free to use our website anytime, anywhere<BR>as per your convenience</h1>
+        <a href="contact.html" class="hero-btn">CONTACT US</a>
+    </section>
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>We are a bunch of engineers trying to make some lives better!</p>
+        <p>Made with <i class="fa fa-heart" ></i> by Abinaya</p>
+    </section>
+
+
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+          navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+
+    </script>
+
+</body>
+</html>

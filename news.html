@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="img/images.png"></a>
+            <div class="name"><p>CMFlawyers.com</p></div>
+            <div class="nav-links" id="navLinks">
+               <i class="fa fa-times" onclick="hideMenu()"></i>
+               <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="company.html">COMPANY</a></li>
+                <li><a href="partners.html">PARTNERS</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+               </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" ></i>
+        </nav>
+    <div class="text-box">
+            <h1>News</h1>
+            <p>We know how hard it is to manage so many clients altogether by yourself, so here we are with our creative minds to help you.<br> We are just like your personal assistants. Feel free to use our website as you wish! </p>
+            <button onclick="window.location.href='https://www.google.com/search?q=lawyer+clients+news&rlz=1C1ONGR_enIN995IN995&source=lnms&tbm=nws&sa=X&ved=2ahUKEwi1jYreiZz5AhWW-mEKHXgzD_8Q_AUoAXoECAIQAw&biw=1707&bih=948&dpr=1.5';">Click here</button>
+
+    </div>
+    </section>
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+          navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+
+    </script>
+</body>

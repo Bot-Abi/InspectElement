@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="img/images.png"></a>
+            <div class="name"><p>CMFlawyers.com</p></div>
+            <div class="nav-links" id="navLinks">
+               <i class="fa fa-times" onclick="hideMenu()"></i>
+               <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="company.html">COMPANY</a></li>
+                <li><a href="partners.html">PARTNERS</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+               </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" ></i>
+        </nav>
+    <div class="text-box">
+            <h1>Contact Us</h1>
+            <p>We know how hard it is to manage so many clients altogether by yourself, so here we are with our creative minds to help you.<br> We are just like your personal assistants. Feel free to use our website as you wish! </p>
+            <img src="img/contact.png" style="max-width:100%">
+
+    </div>
+    </section>
+
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+          navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+
+    </script>
+
+<div class="container">
+    <p1>SEND US YOUR QUERIES!</p1>
+   <br><br>
+   <div class="login">
+     <input type="text" placeholder="Your Name" class="input" id="name">
+     <input type="text" placeholder="Your Email Address" class="input" id="email">
+   </div>
+   
+   <div class="subject">
+     <input type="text" placeholder="Subject" class="input" id="Sub">
+   </div>
+   
+   <div class="msg">
+     <textarea  class="area" placeholder="Leave a Message" id="msg"></textarea>
+   </div>
+   
+   <button onclick="message()">Send Message </button>
+
+   <script>
+       function message(){
+           var Name=document.getElementById('name');
+           var email=document.getElementById('email');
+           var Sub=document.getElementById('Sub');
+           var msg=document.getElementById('msg');
+
+       if(Name.value==='' || email.value==='' || Sub.value==='' || msg.value===''){
+          alert("Fields cannot be empty!")
+          return false;
+       }
+       else{
+          alert("Message sent successfully!")
+       }
+
+   }
+
+
+
+   </script>
+
+</body>
+  

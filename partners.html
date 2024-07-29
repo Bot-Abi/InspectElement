@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="img/images.png"></a>
+            <div class="name"><p>CMFlawyers.com</p></div>
+            <div class="nav-links" id="navLinks">
+               <i class="fa fa-times" onclick="hideMenu()"></i>
+               <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="company.html">COMPANY</a></li>
+                <li><a href="partners.html">PARTNERS</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+               </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" ></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Your Partners</h1>
+            <p>We know how hard it is to manage so many clients altogether by yourself, so here we are with our creative minds to help you.<br> We are just like your personal assistants. Feel free to use our website as you wish! </p>
+        </div>
+    
+    </section>
+
+    <section class="campus">
+        <h1></h1>
+        <p>“Whenever you see a successful business, someone once made a courageous decision.” ~ Peter Drucker.</p>
+
+        <div class="row">
+                <div class="clients-col">
+                    <img src="img/chuck.jpg">
+                    
+                       <h3>CHUCK MCGILL</h3>
+                       <p> Charles Lindbergh "Chuck" McGill, Jr. is a lawyer from Albuquerque, New Mexico, and the older brother of Jimmy McGill. He is the co-founder and named partner of Hamlin, Hamlin & McGill (HHM), one of Albuquerque's most prestigious law firms. A brilliant man who sets himself and others to high ideals, Chuck firmly believes that doing the right thing is the only true path to success. He claims to suffer from electromagnetic hypersensitivity (EHS), essentially an adverse physical reaction to electrical devices, which make it challenging for him to lead a normal life.
+
+                        Despite Jimmy admiring his older brother and initially believing him to be supportive of him as a lawyer, Chuck reveals to greatly resent his brother for his past actions as a conman, and believes him to be completely unfit to be a lawyer. Chuck prevents Jimmy from being hired by HHM and proceeded to create a majority of the obstacles he faces early on in his career. </p>
+       
+                </div>
+                <br><br>
+                <div class="clients-col">
+                    <img src="img/Kim.jpg">
+             
+                        <h3>KIM WEXLER</h3>
+                        <p>Kimberly "Kim" Wexler is a retired lawyer from Albuquerque, New Mexico. She is the former wife and confidant of Jimmy McGill, whom she met while working at Hamlin, Hamlin & McGill (HHM) as an intern and had dated for several years. Kim's success at completing law school and becoming an associate at HHM helped inspire Jimmy to pursue a legal career, and she later inspired various aspects of Jimmy's Saul Goodman persona.Kim received praise as a lawyer for being highly skilled at negotiation and devising legal strategies in order to get her clients the best deals possible, though she was sometimes undermined by Howard Hamlin, her former boss at the firm. </p>
+                   
+                </div>
+                <br><br>
+                <div class="clients-col">
+                    <img src="img/howard.jpg">
+                   
+                       <h3>HOWARD HAMLIN</h3>
+                       <p>Howard Hamlin is a corporate lawyer from Albuquerque, New Mexico, best known as the owner and CEO of Hamlin, Hamlin & McGill (HHM), a large Albuquerque-based law firm. The firm was originally established by Howard's father George and Chuck McGill, who later added Howard as one of the managing partners. When George died and Chuck became housebound as a result of his supposed electromagnetic hypersensitivity, Howard became the firm's managing partner and senior partner. Although Howard did not have a personal grudge against Jimmy McGill whereas Chuck did, Howard's friendship with Chuck and privileged background prove to be a constant source of frustration for both Jimmy and his girlfriend Kim Wexler. Despite his feuds with the McGill brothers and Kim, Howard is a skilled and affluent lawyer, with HHM being one of the most respected firms in Albuquerque.</p>
+        
+                </div>
+        </div>
+        <br><br>
+    </section>
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+          navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+
+    </script>
+
+
+    
+</body>
+</html>
